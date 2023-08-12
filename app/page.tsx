@@ -1,7 +1,9 @@
+import InstaGallery from '~/components/insta-gallery';
+
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
   return (
-    <main className='container mx-auto max-w-[600px]'>
+    <main className='container'>
       <section className='relative h-[80vh]'>
         <div className='absolute top-0 inset-x-0 -z-10 h-[80vh]'>
           <div className='relative w-full h-full overflow-hidden'>
@@ -52,17 +54,11 @@ export default function Home() {
       </section>
       <section>
         <h2 className='hidden'>인스타 갤러리</h2>
-        <div className='grid grid-cols-3 gap-1'>
-          {[...Array(27)].map((_, i) => (
-            <div key={i} className=''>
-              <img
-                className='w-full h-full object-cover aspect-square'
-                src={`https://picsum.photos/seed/b${i}/600/400?grayscale`}
-                alt=''
-              />
-            </div>
-          ))}
-        </div>
+        <InstaGallery
+          images={[...Array(27)].map((_, i) => ({
+            src: `https://picsum.photos/seed/b${i}/600/400?grayscale`,
+          }))}
+        />
       </section>
       <footer className='relative py-12'>
         <p className='px-6 mt-8 text-sm text-gray-600'>© 2023 bepyan. All rights reserved. </p>

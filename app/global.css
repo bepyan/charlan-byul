@@ -9,3 +9,58 @@
   --sticky-color: #464646;
   --sticky-bgc: #fafaf8;
 }
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ===== swiper ===== */
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== animation ==== */
+
+[data-animate-stagger] {
+  --stagger: 0;
+  --delay: 120ms;
+  --start: 0ms;
+  animation: stagger 0.3s both;
+  animation-delay: calc(var(--stagger) * var(--delay) + var(--start));
+}
+
+@keyframes stagger {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+[data-animate-fade] {
+  --delay: 0ms;
+  animation: opacity 0.2s both;
+  animation-delay: calc(var(--delay));
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
