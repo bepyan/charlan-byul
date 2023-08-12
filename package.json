@@ -1,0 +1,25 @@
+{
+  "name": "chan-byul",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.4.10",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "@vanilla-extract/css": "^1.12.0",
+    "@vanilla-extract/next-plugin": "^2.2.2",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.13",
+    "modern-normalize": "^2.0.0",
+    "next": "13.4.13",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6"
+  }
+}
