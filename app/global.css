@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --max-logo-width: 10rem;
+  --color: #4f3131;
+  --background-color: #fcf9f4;
+  --sticky-color: #464646;
+  --sticky-bgc: #fafaf8;
+}
