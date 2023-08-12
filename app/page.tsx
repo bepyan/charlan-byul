@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
   return (
-    <main className='container mx-auto'>
+    <main className='container mx-auto max-w-[600px]'>
       <section className='relative h-[80vh]'>
         <div className='absolute top-0 inset-x-0 -z-10 h-[80vh]'>
           <div className='relative w-full h-full overflow-hidden'>
