@@ -1,13 +1,14 @@
-import { toast } from 'react-hot-toast';
 import Accordion from '~/components/accordion';
+import ContactDialog from '~/components/contact-dialog';
 import CopyButton from '~/components/copy-button';
-import { CopyLineIcon, DividerIcon } from '~/components/icons';
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '~/components/dialog';
+import { DividerIcon, PearlIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
 
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
   return (
-    <main className='container font-serif'>
+    <main className='container'>
       {/* 동영상 */}
       <section className='relative w-full aspect-4/5'>
         <div className='absolute top-0 inset-x-0 -z-10'>
@@ -28,11 +29,7 @@ export default function Home() {
       <section className='bg-white mt-16'>
         <h2 className='font-serif_en text-center text-xl'>wedding invitation</h2>
         <div className='flex justify-center my-4'>
-          <img
-            className='w-3 h-3 aspect-square'
-            src='https://github.com/bepyan/charlan-byul/assets/65283190/2a6bfd15-e502-4d61-b94d-eec5758061a4'
-            alt=''
-          />
+          <PearlIcon />
         </div>
         <div className='text-center'>
           <div className='flex justify-center items-center gap-1'>
@@ -90,9 +87,18 @@ export default function Home() {
           </div>
         </div>
         <div className='mt-12 text-center'>
-          <button className='border rounded-full px-4 py-2 transition-colors active:bg-gray-50'>
-            연락하기
-          </button>
+          <ContactDialog
+            groomList={[
+              { designation: '신랑', name: '김경찬', phone: '010' },
+              { designation: '신랑 아버지', name: '김인환', phone: '010' },
+              { designation: '신랑 어머니', name: '김옥현', phone: '010' },
+            ]}
+            priestList={[
+              { designation: '신부', name: '김샛별', phone: '010-8411-8385' },
+              { designation: '신부 아버지', name: '김경복', phone: '010-5112-5683' },
+              { designation: '신부 어머니', name: '김유정', phone: '010-2995-5683' },
+            ]}
+          />
         </div>
       </section>
       {/* 달력 */}

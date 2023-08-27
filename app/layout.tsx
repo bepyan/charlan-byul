@@ -1,4 +1,4 @@
-import Toaster from '~/components/Toaster';
+import HotToaster from '~/components/hot-toaster';
 import './global.css';
 
 import type { Metadata } from 'next';
@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='ko'>
-      <body>
+      <body className='font-serif'>
         {children}
-        <Toaster />
+        <HotToaster />
       </body>
     </html>
   );

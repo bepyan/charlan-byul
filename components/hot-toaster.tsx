@@ -1,11 +1,10 @@
 'use client';
-import { Toaster as HotToaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
-export default function Toaster() {
+export default function HotToaster() {
   return (
-    <HotToaster
+    <Toaster
       toastOptions={{
-        className: 'text-xs',
         style: {
           backdropFilter: 'blur(16px)',
           filter: 'drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 10px)',

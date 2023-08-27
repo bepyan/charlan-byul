@@ -9,10 +9,10 @@ export default function CopyButton({ className, text }: { className?: string; te
       await navigator.clipboard.writeText(text);
       toast(() => (
         <div>
-          <p>
+          <p className='text-sm'>
             <b>복사완료</b>
           </p>
-          <p>{text}</p>
+          <p className='text-xs'>{text}</p>
         </div>
       ));
     } catch (e) {

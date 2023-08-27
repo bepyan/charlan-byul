@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { SVGProps } from 'react';
+import { cn } from '~/libs/utils';
 
 export function CloseLineIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -74,5 +76,16 @@ export function CopyLineIcon(props: SVGProps<SVGSVGElement>) {
         ></path>
       </g>
     </svg>
+  );
+}
+
+export function PearlIcon(props: React.HTMLProps<HTMLImageElement>) {
+  return (
+    <img
+      {...props}
+      src='https://github.com/bepyan/charlan-byul/assets/65283190/2a6bfd15-e502-4d61-b94d-eec5758061a4'
+      alt='진주'
+      className={cn('w-3 h-3 aspect-square', props.className)}
+    />
   );
 }
