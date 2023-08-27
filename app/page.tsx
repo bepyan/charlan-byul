@@ -120,7 +120,21 @@ export default function Home() {
           }))}
         />
       </section>
-      {/* 연락처 */}
+      {/* 오시는 길 */}
+      <section className='my-16'>
+        <h2 className='text-center'>오시는 길 </h2>
+        <div className='mt-4 text-center text-sm text-gy-6'>
+          <div>서울 강남구 논현로79길 72</div>
+        </div>
+        <div className='mt-4'>
+          <div className='flex gap-4 justify-center text-sm'>
+            <div>네이버 지도</div>
+            <div>카카오 내비</div>
+            <div>티맵</div>
+          </div>
+        </div>
+      </section>
+      {/* 계좌번호 */}
       <section className='my-16'>
         <h2 className='text-center'>마음 전하실 곳</h2>
         <div className='mt-8 mx-8'>
@@ -149,7 +163,13 @@ export default function Home() {
         </div>
       </section>
       <footer className='relative py-12'>
-        <p className='px-6 mt-8 text-sm text-gy-6'>© 2023 bepyan. All rights reserved. </p>
+        <p className='px-6 mt-8 text-xs text-gy-6'>
+          © 2023{' '}
+          <a href='https://bepyan.me/' target='_blank' className='font-bold'>
+            bepyan
+          </a>
+          . All rights reserved.
+        </p>
       </footer>
     </main>
   );
