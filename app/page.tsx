@@ -1,4 +1,7 @@
-import { ChatIcon, DividerIcon, PhoneIcon } from '~/components/icons';
+import { toast } from 'react-hot-toast';
+import Accordion from '~/components/accordion';
+import CopyButton from '~/components/copy-button';
+import { CopyLineIcon, DividerIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
 
 /* eslint-disable @next/next/no-img-element */
@@ -11,29 +14,15 @@ export default function Home() {
           <div className='relative overflow-hidden'>
             <video
               className='w-full inset-0 object-cover aspect-4/5'
-              src='/assets/wedding.mp4'
-              muted
+              src='https://velog.velcdn.com/images/bepyan/post/4b5eac52-8d8f-465f-8087-564517fa4f35/image.mp4'
               preload='metadata'
               loop
               autoPlay
               webkit-playsinline='webkit-playsinline'
               playsInline
             />
-            {/* <div className='absolute -inset-px bg-white/5' aria-hidden='true' />
-            <div
-              className='absolute -inset-px bg-gradient-to-br from-transparent via-transparent to-white'
-              aria-hidden='true'
-            />
-            <div
-              className='absolute -inset-px bg-gradient-to-b from-transparent via-white/10 to-white'
-              aria-hidden='true'
-            /> */}
           </div>
         </div>
-        {/* <div className='absolute bottom-10 right-8 text-right font-serif_en'>
-          <h2 className='font-bold text-2xl'>WEDDING</h2>
-          <span></span>
-        </div> */}
       </section>
       {/* */}
       <section className='bg-white mt-16'>
@@ -51,9 +40,10 @@ export default function Home() {
             <DividerIcon />
             <span>김샛별</span>
           </div>
-          <div className='mt-4 text-sm text-gy-6'>
-            <p className=''>2023년 11월 4일 토요일 낮 12:30</p>
-            <p className=''>라비돌웨딩강남 2F 오뗄홀</p>
+          <div className='mt-4 text-sm text-gy-6 leading-7'>
+            2023년 11월 4일 토요일 낮 12:30
+            <br />
+            라비돌웨딩강남 2F 오뗄홀
           </div>
         </div>
         <div className='mt-8'>
@@ -100,7 +90,9 @@ export default function Home() {
           </div>
         </div>
         <div className='mt-12 text-center'>
-          <button className='border rounded-full px-4 py-2'>연락하기</button>
+          <button className='border rounded-full px-4 py-2 transition-colors active:bg-gray-50'>
+            연락하기
+          </button>
         </div>
       </section>
       {/* 달력 */}
@@ -117,20 +109,41 @@ export default function Home() {
       <section>
         <h2 className='hidden'>인스타 갤러리</h2>
         <InstaGallery
-          images={[...Array(27)].map((_, i) => ({
+          images={[...Array(15)].map((_, i) => ({
             src: `https://picsum.photos/seed/b${i}/600/400?grayscale`,
           }))}
         />
       </section>
       {/* 연락처 */}
-      <section className='my-16 text-center'>
-        <h2>마음 전하실 곳</h2>
-        <div className='mt-4 mx-8'>
-          <div className='text-sm border rounded-lg px-4 py-2 bg-gray-50'>신랑측 계좌번호</div>
+      <section className='my-16'>
+        <h2 className='text-center'>마음 전하실 곳</h2>
+        <div className='mt-8 mx-8'>
+          <Accordion title='신랑측 계좌번호'>
+            <div className='relative text-gy-6 text-xs'>
+              <div className='flex items-center'>
+                <div>카카오뱅크</div>
+                <DividerIcon className='text-gy-8 mx-1' />
+                <div>3333-23-999999</div>
+              </div>
+              <div>김경찬</div>
+              <CopyButton className='absolute top-0.5 right-0' text='카카오뱅크 3333-23-999999' />
+            </div>
+          </Accordion>
+          <Accordion title='신부측 계좌번호' className='mt-2'>
+            <div className='relative text-gy-6 text-xs'>
+              <div className='flex items-center'>
+                <div>카카오뱅크</div>
+                <DividerIcon className='text-gy-8 mx-1' />
+                <div>3333-23-999999</div>
+              </div>
+              <div>김샛별</div>
+              <CopyButton className='absolute top-0.5 right-0' text='카카오뱅크 3333-23-999999' />
+            </div>
+          </Accordion>
         </div>
       </section>
       <footer className='relative py-12'>
-        <p className='px-6 mt-8 text-sm text-gy-8-600'>© 2023 bepyan. All rights reserved. </p>
+        <p className='px-6 mt-8 text-sm text-gy-6'>© 2023 bepyan. All rights reserved. </p>
       </footer>
     </main>
   );

@@ -6,7 +6,7 @@ import Swiper from 'swiper';
 import { register } from 'swiper/element/bundle';
 
 import useLockedBody from '~/libs/use-lock-body';
-import { CloseLineIcon } from './icons/close-icon';
+import { CloseLineIcon } from './icons';
 
 declare global {
   type HTMLProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;

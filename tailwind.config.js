@@ -9,6 +9,9 @@ module.exports = {
       mono: ['Source Code Pro', 'monospace'],
     },
     extend: {
+      fontSize: {
+        xs: '13px',
+      },
       container: {
         center: true,
         screens: {

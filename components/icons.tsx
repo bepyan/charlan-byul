@@ -13,6 +13,21 @@ export function CloseLineIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function ArrowDownIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' {...props}>
+      <path
+        fill='none'
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='1.5'
+        d='m19 9l-7 6l-7-6'
+      ></path>
+    </svg>
+  );
+}
+
 export function PhoneIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' {...props}>
@@ -44,6 +59,20 @@ export function DividerIcon(props: SVGProps<SVGSVGElement>) {
         fill='currentColor'
         d='M9.5 3a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5Z'
       ></path>
+    </svg>
+  );
+}
+
+export function CopyLineIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' {...props}>
+      <g fill='none' stroke='currentColor' strokeWidth='1.5'>
+        <path d='M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16v-5Z'></path>
+        <path
+          d='M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828C5.343 2 7.229 2 11 2h4a3 3 0 0 1 3 3'
+          opacity='.5'
+        ></path>
+      </g>
     </svg>
   );
 }
