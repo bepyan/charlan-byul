@@ -17,6 +17,7 @@ export default function Home() {
               className='w-full inset-0 object-cover aspect-4/5'
               src='https://velog.velcdn.com/images/bepyan/post/4b5eac52-8d8f-465f-8087-564517fa4f35/image.mp4'
               preload='metadata'
+              muted
               loop
               autoPlay
               webkit-playsinline='webkit-playsinline'
