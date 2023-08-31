@@ -1,11 +1,9 @@
-import Accordion from '~/components/accordion';
+import BankAccordion from '~/components/bank-accordion';
 import ContactDialog from '~/components/contact-dialog';
 import CopyButton from '~/components/copy-button';
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '~/components/dialog';
 import { DividerIcon, PearlIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
 
-/* eslint-disable @next/next/no-img-element */
 export default function Home() {
   return (
     <main className='container'>
@@ -90,14 +88,14 @@ export default function Home() {
         <div className='mt-12 text-center'>
           <ContactDialog
             groomList={[
-              { designation: '신랑', name: '김경찬', phone: '010' },
-              { designation: '신랑 아버지', name: '김인환', phone: '010' },
-              { designation: '신랑 어머니', name: '김옥현', phone: '010' },
+              { designation: '신랑', name: '김경찬', phone: '010-5483-4475' },
+              { designation: '신랑 父', name: '김인환', phone: '010-3766-4475' },
+              { designation: '신랑 母', name: '김옥현', phone: '010-5390-8473' },
             ]}
             priestList={[
               { designation: '신부', name: '김샛별', phone: '010-8411-8385' },
-              { designation: '신부 아버지', name: '김경복', phone: '010-5112-5683' },
-              { designation: '신부 어머니', name: '김유정', phone: '010-2995-5683' },
+              { designation: '신부 父', name: '김경복', phone: '010-5112-5683' },
+              { designation: '신부 母', name: '김유정', phone: '010-2995-5683' },
             ]}
           />
         </div>
@@ -139,28 +137,23 @@ export default function Home() {
       <section className='my-16'>
         <h2 className='text-center'>마음 전하실 곳</h2>
         <div className='mt-8 mx-8'>
-          <Accordion title='신랑측 계좌번호'>
-            <div className='relative text-gy-6 text-xs'>
-              <div className='flex items-center'>
-                <div>카카오뱅크</div>
-                <DividerIcon className='text-gy-8 mx-1' />
-                <div>3333-23-999999</div>
-              </div>
-              <div>김경찬</div>
-              <CopyButton className='absolute top-0.5 right-0' text='카카오뱅크 3333-23-999999' />
-            </div>
-          </Accordion>
-          <Accordion title='신부측 계좌번호' className='mt-2'>
-            <div className='relative text-gy-6 text-xs'>
-              <div className='flex items-center'>
-                <div>카카오뱅크</div>
-                <DividerIcon className='text-gy-8 mx-1' />
-                <div>3333-23-999999</div>
-              </div>
-              <div>김샛별</div>
-              <CopyButton className='absolute top-0.5 right-0' text='카카오뱅크 3333-23-999999' />
-            </div>
-          </Accordion>
+          <BankAccordion
+            title='신랑측 계좌번호'
+            bankList={[
+              { holder: '김경찬', bank: '우리', number: '1002563763111' },
+              { holder: '김인환', bank: '국민', number: '404601-01-077682' },
+              { holder: '김옥현', bank: '국민', number: '034-21-0812-232' },
+            ]}
+          />
+          <BankAccordion
+            className='mt-2'
+            title='신부측 계좌번호'
+            bankList={[
+              { holder: '김샛별', bank: '국민', number: '60510204117338' },
+              { holder: '김경복', bank: '국민', number: '043240643400' },
+              { holder: '김유정', bank: '농협', number: '356-0942-7634-43' },
+            ]}
+          />
         </div>
       </section>
       <footer className='relative py-12'>

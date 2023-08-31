@@ -8,7 +8,7 @@ export default function HotToaster() {
         style: {
           backdropFilter: 'blur(16px)',
           filter: 'drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 10px)',
-          background: 'rgba(255, 255, 255, 0.7)',
+          background: 'rgba(255, 255, 255, 0.9)',
         },
         position: 'top-center',
       }}

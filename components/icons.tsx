@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { SVGProps } from 'react';
 import { cn } from '~/libs/utils';
 

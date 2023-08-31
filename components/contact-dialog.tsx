@@ -1,6 +1,6 @@
 'use client';
 
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from './dialog';
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from './cores/dialog';
 import { ChatIcon, PhoneIcon } from './icons';
 
 type Contact = {
@@ -23,13 +23,13 @@ export default function ContactDialog({
       </DialogTrigger>
       <DialogContent className='w-10/12'>
         <DialogTitle className='p-4 text-center'>연락처</DialogTitle>
-        <div className='px-6 pb-4'>
-          <div>
+        <div className='px-6 pb-4 text-sm space-y-4'>
+          <div className='space-y-1'>
             {groomList.map((contact, i) => (
               <ContactItem key={i} contact={contact} />
             ))}
           </div>
-          <div className='mt-4'>
+          <div className='space-y-1'>
             {priestList.map((contact, i) => (
               <ContactItem key={i} contact={contact} />
             ))}
