@@ -3,6 +3,7 @@ import ContactDialog from '~/components/contact-dialog';
 import CopyButton from '~/components/copy-button';
 import { DividerIcon, PearlIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
+import NaverMap from '~/components/naver-map';
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
         </div>
       </section>
       {/* */}
-      <section className='bg-white mt-16'>
+      <section className='bg-white mt-20'>
         <h2 className='font-serif_en text-center text-xl'>wedding invitation</h2>
         <div className='flex justify-center my-4'>
           <PearlIcon />
@@ -228,27 +229,48 @@ export default function Home() {
         />
       </section>
       {/* 오시는 길 */}
-      <section className='my-16'>
-        <h2 className='text-center'>오시는 길 </h2>
-        <div className='mt-4 text-center text-sm text-gy-6'>
-          <div>서울 강남구 논현로79길 72</div>
+      <section className='my-20'>
+        <h2 className='text-center'>오시는 길</h2>
+        <NaverMap className='my-10 h-60 w-full' />
+        <div className='mx-8 mt-4'>
+          <div className='relative'>
+            <p className=''>
+              서울 강남구 논현로79길 72
+              <br />
+              라비돌웨딩강남 2F 오뗄홀
+            </p>
+          </div>
+          <p className='mt-2 text-xs text-gy-8'>02-538-3300</p>
         </div>
-        <div className='mt-4'>
-          <div className='flex gap-4 justify-center text-sm'>
-            <div>네이버 지도</div>
-            <div>카카오 내비</div>
-            <div>티맵</div>
+        <div className='mt-10 mx-8 space-y-3'>
+          <div className='flex'>
+            <span className='w-14'>지하철</span>
+            <DividerIcon className='text-gy-8 mt-[2.5px] mr-2' />
+            <span className='text-sm text-gy-6 mt-[1px]'>[2호선 강남역] 2번 출구 도보 3분</span>
+          </div>
+          <div className='flex'>
+            <span className='w-14'>버스</span>
+            <DividerIcon className='text-gy-8 mt-[2.5px] mr-2' />
+            <div className='text-sm text-gy-6 mt-[1px]'>
+              <p>간선: 112.224. 4455. 667</p>
+              <p>간선: 112.224. 4455. 667</p>
+            </div>
+          </div>
+          <div className='flex'>
+            <span className='w-14'>주차</span>
+            <DividerIcon className='text-gy-8 mt-[2.5px] mr-2' />
+            <span className='text-sm text-gy-6 mt-[1px]'>건물 내 주차장 500대 가능</span>
           </div>
         </div>
       </section>
       {/* 계좌번호 */}
-      <section className='my-16'>
+      <section className='my-20'>
         <h2 className='text-center'>마음 전하실 곳</h2>
         <div className='mt-8 mx-8'>
           <BankAccordion
             title='신랑측 계좌번호'
             bankList={[
-              { holder: '김경찬', bank: '우리', number: '1002563763111' },
+              { holder: '김경찬', bank: '우리', number: '1002-563-763111' },
               { holder: '김인환', bank: '국민', number: '404601-01-077682' },
               { holder: '김옥현', bank: '국민', number: '034-21-0812-232' },
             ]}
@@ -257,8 +279,8 @@ export default function Home() {
             className='mt-2'
             title='신부측 계좌번호'
             bankList={[
-              { holder: '김샛별', bank: '국민', number: '60510204117338' },
-              { holder: '김경복', bank: '국민', number: '043240643400' },
+              { holder: '김샛별', bank: '국민', number: '605102-04-117338' },
+              { holder: '김경복', bank: '국민', number: '043-24-0643-400' },
               { holder: '김유정', bank: '농협', number: '356-0942-7634-43' },
             ]}
           />
