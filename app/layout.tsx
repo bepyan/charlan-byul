@@ -1,7 +1,9 @@
-import HotToaster from '~/components/hot-toaster';
 import './global.css';
 
 import type { Metadata } from 'next';
+import Script from 'next/script';
+
+import HotToaster from '~/components/hot-toaster';
 
 const config = {
   title: '김경찬 ♥ 김샛별 결혼합니다',
@@ -33,7 +35,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='font-serif'>
         {children}
         <HotToaster />
+        <GoogleAnalytics />
       </body>
     </html>
+  );
+}
+
+function GoogleAnalytics() {
+  const ga_id = 'G-8JFGKR1B8C';
+
+  return (
+    <>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${ga_id}`} />
+      <Script id='google-analytics'>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', '${ga_id}');
+        `}
+      </Script>
+    </>
   );
 }
