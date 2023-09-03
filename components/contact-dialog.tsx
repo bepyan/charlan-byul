@@ -21,7 +21,7 @@ export default function ContactDialog({
       <DialogTrigger className='border rounded-full px-4 py-2 transition-colors active:bg-gray-50 select-none'>
         연락하기
       </DialogTrigger>
-      <DialogContent className='w-10/12'>
+      <DialogContent className='w-10/12 rounded-lg border'>
         <DialogTitle className='p-4 text-center'>연락처</DialogTitle>
         <div className='px-6 pb-4 text-sm space-y-4'>
           <div className='space-y-1'>
