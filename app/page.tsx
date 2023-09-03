@@ -4,24 +4,16 @@ import CopyButton from '~/components/copy-button';
 import { DividerIcon, PearlIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
 import NaverMap from '~/components/naver-map';
+import VideoPlayer from '~/components/video-player';
 
 export default function Home() {
   return (
     <main className='container'>
       {/* 동영상 */}
-      <section className='relative w-full aspect-4/5'>
+      <section className='relative w-full aspect-4/5 my-20'>
         <div className='absolute top-0 inset-x-0 -z-10'>
           <div className='relative overflow-hidden'>
-            <video
-              className='w-full inset-0 object-cover aspect-4/5'
-              src='https://velog.velcdn.com/images/bepyan/post/4b5eac52-8d8f-465f-8087-564517fa4f35/image.mp4'
-              preload='metadata'
-              muted
-              loop
-              autoPlay
-              webkit-playsinline='webkit-playsinline'
-              playsInline
-            />
+            <VideoPlayer />
           </div>
         </div>
       </section>
@@ -52,7 +44,7 @@ export default function Home() {
         </div>
       </section>
       {/* */}
-      <section className='text-sm pt-16'>
+      <section className='text-sm mt-10'>
         <p className='text-center leading-7'>
           모든 겸손과 온유로 하고 오래 참음으로
           <br />
