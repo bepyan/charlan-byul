@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from 'react';
 import { register } from 'swiper/element/bundle';
 
 import { Dialog, DialogContent, DialogTrigger } from '~/components/cores/dialog';
-import { CloseLineIcon } from './icons';
+import { CloseLineIcon, DownIcon } from './icons';
 
 declare global {
   type HTMLProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
@@ -21,8 +21,10 @@ declare global {
 
 register();
 
+const SLICE_SIZE = 9;
+
 export default function InstaGallery({ images }: { images: { src: string }[] }) {
-  const [showMore, setShowMore] = useState(false);
+  const [sliceIndex, setSliceIndex] = useState(1);
   const [sliderIndex, setSliderIndex] = useState(0);
 
   const showImage = (index: number) => {
@@ -32,19 +34,22 @@ export default function InstaGallery({ images }: { images: { src: string }[] }) 
   return (
     <Dialog>
       <div className='grid grid-cols-3 gap-1'>
-        {images.slice(...(showMore ? [0] : [0, 9])).map((image, i) => (
+        {images.slice(0, sliceIndex * SLICE_SIZE).map((image, i) => (
           <DialogTrigger key={i} onClick={() => showImage(i)}>
             <img className='w-full h-full object-cover aspect-square' src={image.src} alt='' />
           </DialogTrigger>
         ))}
       </div>
-      {!showMore && (
-        <div className='mt-4 flex justify-center'>
-          <button className='text-sm' onClick={() => setShowMore(true)}>
-            더 보기
+      <div className='mt-4 flex items-center justify-center'>
+        {images.length > sliceIndex * SLICE_SIZE && (
+          <button
+            className='p-4 transition-opacity active:opacity-60'
+            onClick={() => setSliceIndex(sliceIndex + 1)}
+          >
+            <DownIcon className='text-gy-8' />
           </button>
-        </div>
-      )}
+        )}
+      </div>
       <DialogContent className='w-full h-full'>
         <SwiperContainer images={images} sliderIndex={sliderIndex} />
       </DialogContent>

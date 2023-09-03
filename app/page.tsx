@@ -105,7 +105,7 @@ export default function Home() {
         </div>
       </section>
       {/* 달력 */}
-      <section className='mt-16 mb-24'>
+      <section className='mt-20'>
         <div className='relative'>
           <img
             className='w-full h-full aspect-4/5'
@@ -115,8 +115,8 @@ export default function Home() {
         </div>
       </section>
       {/* 갤러리 */}
-      <section>
-        <h2 className='hidden'>인스타 갤러리</h2>
+      <section className='mt-1'>
+        <h2 className='hidden font-serif_en text-center text-xl'>gallery</h2>
         <InstaGallery
           images={[
             {

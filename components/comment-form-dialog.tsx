@@ -26,7 +26,7 @@ export default function CommentFormDialog() {
     };
 
     const comment: CommentPost = {
-      name: target.name.value ?? '익명',
+      name: !!target.name.value ? target.name.value : '익명',
       password: target.password.value,
       message: target.message.value.replace(/\n\r?/g, '\n\r'),
     };
