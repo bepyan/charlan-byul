@@ -3,12 +3,20 @@
 import { toast } from 'react-hot-toast';
 import { CopyLineIcon } from './icons';
 
-export default function CopyButton({ className, text }: { className?: string; text: string }) {
+export default function CopyButton({
+  className,
+  iconClassName,
+  text,
+}: {
+  className?: string;
+  iconClassName?: string;
+  text: string;
+}) {
   const onClick = async () => {
     try {
       await navigator.clipboard.writeText(text);
       toast(() => (
-        <div>
+        <div className='min-w-[200px]'>
           <p className='text-sm'>
             <b>복사완료</b>
           </p>
@@ -25,7 +33,7 @@ export default function CopyButton({ className, text }: { className?: string; te
       className={'transition-opacity active:opacity-60 ' + className ? className : ''}
       onClick={onClick}
     >
-      <CopyLineIcon />
+      <CopyLineIcon className={iconClassName} />
     </button>
   );
 }
