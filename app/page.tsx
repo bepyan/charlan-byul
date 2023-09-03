@@ -1,7 +1,10 @@
+import { format } from 'date-fns';
 import BankAccordion from '~/components/bank-accordion';
+import CommentFormDialog from '~/components/comment-form-dialog';
+import CommentList from '~/components/comment-list';
 import ContactDialog from '~/components/contact-dialog';
 import CopyButton from '~/components/copy-button';
-import { DividerIcon, PearlIcon } from '~/components/icons';
+import { CloseLineIcon, DividerIcon, PearlIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
 import NaverMap from '~/components/naver-map';
 import VideoPlayer from '~/components/video-player';
@@ -263,8 +266,8 @@ export default function Home() {
             title='신랑측 계좌번호'
             bankList={[
               { holder: '김경찬', bank: '우리', number: '1002-563-763111' },
-              { holder: '김인환', bank: '국민', number: '404601-01-077682' },
-              { holder: '김옥현', bank: '국민', number: '034-21-0812-232' },
+              { holder: '김인환', bank: '국민', number: '034-21-0812-232' },
+              { holder: '김옥현', bank: '국민', number: '404601-01-077682' },
             ]}
           />
           <BankAccordion
@@ -277,6 +280,13 @@ export default function Home() {
             ]}
           />
         </div>
+      </section>
+      <section>
+        <h2 className='text-center'>축하 메시지</h2>
+        <div className='flex justify-center my-6'>
+          <CommentFormDialog />
+        </div>
+        <CommentList />
       </section>
       <footer className='relative py-12'>
         <p className='mx-8 mt-8 text-xs text-gy-6'>

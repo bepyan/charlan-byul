@@ -88,3 +88,39 @@ export function PearlIcon(props: React.HTMLProps<HTMLImageElement>) {
     />
   );
 }
+
+export function SendIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 16 16' {...props}>
+      <path
+        fill='currentColor'
+        d='M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576L6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76l7.494-7.493Z'
+      ></path>
+    </svg>
+  );
+}
+
+export function LoadingLoopIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' {...props}>
+      <path
+        fill='none'
+        stroke='currentColor'
+        strokeDasharray='15'
+        strokeDashoffset='15'
+        strokeLinecap='round'
+        strokeWidth='2'
+        d='M12 3C16.9706 3 21 7.02944 21 12'
+      >
+        <animate fill='freeze' attributeName='stroke-dashoffset' dur='0.3s' values='15;0'></animate>
+        <animateTransform
+          attributeName='transform'
+          dur='1.5s'
+          repeatCount='indefinite'
+          type='rotate'
+          values='0 12 12;360 12 12'
+        ></animateTransform>
+      </path>
+    </svg>
+  );
+}
