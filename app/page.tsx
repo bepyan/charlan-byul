@@ -42,7 +42,7 @@ export default function Home() {
             라비돌웨딩강남 2F 오뗄홀
           </div>
         </div>
-        <div className='mt-8'>
+        <div className='mt-10'>
           <img
             className='w-full h-full aspect-4/3'
             src='https://github.com/bepyan/charlan-byul/assets/65283190/bc216e75-9b2f-42e5-90aa-af2473195c24'
@@ -51,41 +51,51 @@ export default function Home() {
         </div>
       </section>
       {/* */}
-      <section className='text-sm'>
-        <p className='pt-16 px-3 text-center leading-7'>
-          하나님의 섬세하신 계획 아래 
+      <section className='text-sm pt-16'>
+        <p className='text-center leading-7'>
+          모든 겸손과 온유로 하고 오래 참음으로
           <br />
-          사랑과 순종함으로 만나 
+          사랑 가운데서 서로 용납하고 평안의 매는 줄로
           <br />
-          이제 연합하여 새로운 가정을 이루려 합니다. 
+          성령이 하나 되게 하신 것을 힘써 지키라
           <br />
-          서로를 사랑함으로 하나님을 기쁘시게 하고 
-          <br />
-          이웃을 섬기는 선한 가정을 이룰 수 있게 
-          <br />
-          오셔서 축복해 주시면 감사하겠습니다.
+          에베소서 4:2-3
         </p>
-        <div className='mt-10 space-y-6'>
-          <div className='flex items-center justify-center gap-3'>
-            <div>
-              <div>김인환</div>
-              <div>김옥현</div>
-            </div>
-            <span>의</span>
-            <span>차남</span>
-            <strong>경찬</strong>
-          </div>
-          <div className='flex items-center justify-center gap-3'>
-            <div>
-              <div>김경복</div>
-              <div>김유정</div>
-            </div>
-            <span>의</span>
-            <span>장녀</span>
-            <strong>샛별</strong>
-          </div>
+        <div className='flex justify-center my-10'>
+          <PearlIcon />
         </div>
-        <div className='mt-12 text-center'>
+        <p className='text-center leading-7'>
+          하나님의 섬세하신 계획 아래
+          <br />
+          사랑과 순종함으로 만나
+          <br />
+          이제 연합하여 새로운 가정을 이루려 합니다.
+          <br />
+          서로를 사랑함으로 하나님을 기쁘시게 하고
+          <br />
+          이웃을 섬기는 선한 가정을 이룰 수 있게
+          <br />
+          오셔서 축복해 주시면 감사하겠습니다.
+        </p>
+        <div className='mt-10 flex items-center justify-center gap-3'>
+          <div>
+            <div>김인환</div>
+            <div>김옥현</div>
+          </div>
+          <span>의</span>
+          <span>차남</span>
+          <strong>경찬</strong>
+        </div>
+        <div className='mt-10 flex items-center justify-center gap-3'>
+          <div>
+            <div>김경복</div>
+            <div>김유정</div>
+          </div>
+          <span>의</span>
+          <span>장녀</span>
+          <strong>샛별</strong>
+        </div>
+        <div className='mt-10 text-center'>
           <ContactDialog
             groomList={[
               { designation: '신랑', name: '김경찬', phone: '010-5483-4475' },
@@ -255,7 +265,7 @@ export default function Home() {
         </div>
       </section>
       <footer className='relative py-12'>
-        <p className='px-6 mt-8 text-xs text-gy-6'>
+        <p className='mx-8 mt-8 text-xs text-gy-6'>
           © 2023{' '}
           <a href='https://bepyan.me/' target='_blank' className='font-bold'>
             bepyan
