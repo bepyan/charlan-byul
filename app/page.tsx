@@ -1,10 +1,8 @@
-import { format } from 'date-fns';
 import BankAccordion from '~/components/bank-accordion';
 import CommentFormDialog from '~/components/comment-form-dialog';
 import CommentList from '~/components/comment-list';
 import ContactDialog from '~/components/contact-dialog';
-import CopyButton from '~/components/copy-button';
-import { CloseLineIcon, DividerIcon, PearlIcon } from '~/components/icons';
+import { DividerIcon, LinkIcon, PearlIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
 import NaverMap from '~/components/naver-map';
 import VideoPlayer from '~/components/video-player';
@@ -288,8 +286,12 @@ export default function Home() {
         </div>
         <CommentList />
       </section>
-      <footer className='relative py-12'>
-        <p className='mx-8 mt-8 text-xs text-gy-6'>
+      <footer className='relative mt-20 pb-10 px-8'>
+        {/* <div className='flex items-center gap-1 text-xs'>
+          <LinkIcon className='text-gy-8' />
+          청첩장 링크 복사하기
+        </div> */}
+        <p className='mt-8 text-xs text-gy-6'>
           © 2023{' '}
           <a href='https://bepyan.me/' target='_blank' className='font-bold'>
             bepyan

@@ -26,6 +26,7 @@ module.exports = {
         gy: {
           6: '#666',
           8: '#888',
+          9: '#999',
         },
       },
       keyframes: {
