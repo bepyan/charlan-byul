@@ -47,7 +47,7 @@ export default function InstaGallery({ images }: { images: string[] }) {
           <button key={i} onClick={() => showImage(i)}>
             <img
               className='w-full h-full object-cover aspect-square pointer-events-none'
-              src={image}
+              src={`https://img1.daumcdn.net/thumb/R400x0.fjpg/?fname=${image}`}
               alt=''
             />
           </button>
