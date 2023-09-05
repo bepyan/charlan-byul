@@ -45,7 +45,10 @@ export default function CommentList() {
           ))}
           <div className='mt-4 flex items-center justify-center'>
             {commentList.length > sliceIndex * SLICE_SIZE && (
-              <button onClick={() => setSliceIndex(sliceIndex + 1)}>
+              <button
+                className='p-2 rounded-full transition-colors active:bg-gray-100'
+                onClick={() => setSliceIndex(sliceIndex + 1)}
+              >
                 <DownIcon className='text-gy-8' />
               </button>
             )}

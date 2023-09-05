@@ -172,22 +172,28 @@ export default function Home() {
         </div>
         <div className='mt-10 mx-8 space-y-3'>
           <div className='flex'>
-            <span className='w-14'>지하철</span>
-            <DividerIcon className='text-gy-8 mt-[2.5px] mr-2' />
-            <span className='text-sm text-gy-6 mt-[1px]'>[2호선 강남역] 2번 출구 도보 3분</span>
+            <span className='flex-shrink-0 w-14'>지하철</span>
+            <DividerIcon className='flex-shrink-0 text-gy-8 mt-[2.5px] mr-2' />
+            <span className='text-xs text-gy-6 mt-[1px]'>[2호선 강남역] 1번 출구 도보 10분</span>
           </div>
           <div className='flex'>
-            <span className='w-14'>버스</span>
-            <DividerIcon className='text-gy-8 mt-[2.5px] mr-2' />
-            <div className='text-sm text-gy-6 mt-[1px]'>
-              <p>간선: 112.224. 4455. 667</p>
-              <p>간선: 112.224. 4455. 667</p>
+            <span className='flex-shrink-0 w-14'>버스</span>
+            <DividerIcon className='flex-shrink-0 text-gy-8 mt-[2.5px] mr-2' />
+            <div className='text-xs text-gy-6 mt-[1px] space-y-2'>
+              <p>간선: 140, 146, 341, 360, 400, 402, 420, 440, 441, 452, 470, 541, 542, 740, 741</p>
+              <p>광역 : 9404, 9408, M4403, M4434, M5438, M6427, M6439, M7412</p>
             </div>
           </div>
           <div className='flex'>
-            <span className='w-14'>주차</span>
-            <DividerIcon className='text-gy-8 mt-[2.5px] mr-2' />
-            <span className='text-sm text-gy-6 mt-[1px]'>건물 내 주차장 500대 가능</span>
+            <span className='flex-shrink-0 w-14'>주차</span>
+            <DividerIcon className='flex-shrink-0 text-gy-8 mt-[2.5px] mr-2' />
+            <div className='text-xs text-gy-6 mt-[1px] space-y-2'>
+              <p>건물 내 주차장 600대 가능 (무료주차 1시간 30분)</p>
+              <p>
+                *주차장 이용이 혼잡하오니 불편하시더라도 대중교통 이용을 권장 드립니다. (만차 시
+                제2주차장으로 안내해 드릴 수 있으니 여유롭게 도착하셔서 안내 받으시기를 바랍니다.)
+              </p>
+            </div>
           </div>
         </div>
       </section>

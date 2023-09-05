@@ -74,7 +74,7 @@ export default function InstaGallery({ images }: { images: string[] }) {
           >
             {/* 슬라이더 */}
             <div
-              className='pt-4 flex items-center flex-shrink-0 select-none'
+              className='flex items-center flex-shrink-0 select-none'
               style={{ transform: `translateX(-${window.innerWidth * sliderIndex}px)` }}
             >
               {images.map((image, i) => (
