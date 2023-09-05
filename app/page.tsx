@@ -11,12 +11,8 @@ export default function Home() {
   return (
     <main className='container'>
       {/* 동영상 */}
-      <section className='relative w-full aspect-4/5 my-20'>
-        <div className='absolute top-0 inset-x-0 -z-10'>
-          <div className='relative overflow-hidden'>
-            <VideoPlayer />
-          </div>
-        </div>
+      <section className='my-20'>
+        <VideoPlayer />
       </section>
       {/* */}
       <section className='bg-white mt-20'>
