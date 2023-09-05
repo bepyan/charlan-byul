@@ -31,7 +31,7 @@ export default function VideoPlayer() {
       </div>
       {muted && (
         <button
-          className='absolute top-4 left-4 z-50 flex gap-1 items-center px-2 py-1 rounded-lg text-xs bg-gray-50/90 active:bg-gray-100'
+          className='absolute top-4 left-4 z-1 flex gap-1 items-center px-2 py-1 rounded-lg text-xs bg-gray-50/90 active:bg-gray-100'
           onClick={onClick}
         >
           <VolumeOffIcon />

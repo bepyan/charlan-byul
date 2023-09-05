@@ -102,118 +102,57 @@ export default function Home() {
       </section>
       {/* 달력 */}
       <section className='mt-20'>
-        <div className='relative'>
+        <div className='relative select-none pointer-events-none'>
           <img
             className='w-full h-full aspect-4/5'
-            src='https://github.com/bepyan/charlan-byul/assets/65283190/ceab1daf-4f02-4d4e-b0ee-0275e5fb9650'
-            alt=''
+            src='https://github.com/bepyan/charlan-byul/assets/65283190/21aed765-49f8-40ab-ae4b-6446c915f774'
+            alt='달력'
           />
         </div>
       </section>
       {/* 갤러리 */}
       <section className='mt-1'>
-        <h2 className='hidden font-serif_en text-center text-xl'>gallery</h2>
+        <div className='my-10 select-none pointer-events-none'>
+          <img
+            src='https://github.com/bepyan/charlan-byul/assets/65283190/cb2af3b3-aea8-4a8a-91fd-3de68e037bcb'
+            alt='갤러리'
+          />
+        </div>
         <InstaGallery
           images={[
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/0e37f601-a833-4c96-a42a-b8a55c7679ec',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/7c1a58aa-1769-4b2f-b988-5d6741b63897',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/5aefff1c-7664-4e08-b411-198c390e71c5',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/4a7e594f-36ce-4abe-8d66-1b3900fd7e85',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/2aa8b270-f79e-4934-8d0d-e5e9ff25f8fa',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/c8fd6261-e079-47b0-adf2-444d4f1d5b87',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/76754460-1d5d-48fe-a2a1-ca47cff6318c',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/7136d231-5e52-41c2-9a25-726bf61915b6',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/8f3e4466-e1ad-43a7-97be-cc192367fd4a',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/c59217a4-37ed-41c3-acc8-2e2dc7608cc5',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/03b93aa4-9289-429d-90e5-3938eeb0193a',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/2154a53e-cc1e-4e61-aa7e-9c66c7b86d2c',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/15c43444-d054-42e2-bf5c-c315104ece59',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/df0dfb44-0f4c-44a4-9c01-deb244bd81fc',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/d9d13e46-8cd2-4c43-b860-07427dfd5f0b',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/eb0ac18d-e0ae-4683-915d-ec2d158113e3',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/9e2e2760-39e7-4f66-aac1-8558b0c90579',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/38f4b8e4-928f-44ed-876c-40a5cffcfbba',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/263822aa-911a-4d1d-9c0e-df8bfc873061',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/0c9d18a9-5ef6-4e53-b6e1-b140126e6eab',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/9a83adb6-f8a0-4b99-ac37-e3f9f3102f8f',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/5ca574ef-b0cb-4863-a49c-3848538e3533',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/d5ba7879-b465-4334-8a5d-c5fe099ccc8d',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/e49fa83a-53cf-47db-8b0b-bc97a2762a99',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/492c4728-5f34-48eb-b886-62d1fd0592aa',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/0e556e52-a042-4aac-b957-24ae286c8347',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/a4bc1ff7-b2d0-45ad-9268-6475da7af7de',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/35a46671-b8c1-4726-a9e0-8e4ca4c8ef17',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/a8b6c009-09c6-42e8-8a8b-40758a663ac9',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/9cc24dcb-c0a5-44b3-bf90-8874572b22e5',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/4f8e067f-fcdc-4da4-b3dd-859f1b569dce',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/6938b2c5-1387-4d19-b73c-b27784b99233',
-            },
-            {
-              src: 'https://github.com/bepyan/charlan-byul/assets/65283190/dc3c5dad-4ea0-4061-b564-370c98c7561d',
-            },
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/bsjinj6er61Gi8AhyvU9KI7UgCo.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/2xcl5lJcnipI2gUZMtv3r8IoULA.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/qOLwQwGXfHZA8pq2Fp6mZdRcyrg.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/7GoGgCha7mLw5dIyToa17XKm1LY.JPG',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gy3Uf-0Z7KuPtFHR6QqcO1Srlyg.jpg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/oxeT5DLWo_pOpS0lL0KZlUaHzZQ.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/DjaDny2JZhLIuoa6-k8Mt5Af9ng.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/CPzjfHa3iL1SBDSnU3TWx2csotM.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/BzqvC-vHXRVk1vZS_4I6OYnwi-E.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/blk6wPCPC7Sygu2C0sdIGB7FD4Y.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/V3fwqXuhDYyeyurrZ8OpF6j6ebg.jpg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gwWkHxzvdFJ4BXoGuuOsZXfWueE.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gCOr-6VDhSBRnQwmAd0qBRKhaUM.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/UKSINyu3UWRjawDBwKQkECBkRZY.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/ffCK-t-JGSeatpdY2L8MDzjsJzk.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/Xj6R_nRDTqe71_NFRH2K0U-b_dE.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/FesKqvkbdlfulwwj37JoZJQp-Rg.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gf8lpnunOb0xf-0Sz2fAVmC9hGs.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/lJ8td5kywwANbwtTXj0_zq_AJ-M.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/VbWn2SRy2PQQrTgftzMAMP-Cwd8.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/NKh-6xR3iE293SCyEzaNhp9DHpI.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/8MVO5kXGjNCFrCYsSujHHLEaQKY.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/xgeio_Ltr7-bGzpbMuO1Wfplz1o.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/sItEmSPyBKqVe5gMKQWhOZ0K2n4.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/ZDbJZw_i3aoq1HE1kHWz8aI3ihU.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/6lW7BNmwEL07ag60YmpgCj_8NXc.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/v4NK9IKMz2A6ZtWpPwIn5smY3Z8.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/6opwqHGH4MlWcbDNdgJLohQDCxE.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/2lj6Nl17e9MrnWLbjbeGm39RBKw.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/GaZS1lCWbuSo4spa-ZxNu0-X_TM.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/8TJZ_OlCsXE9F-pbqH7fYxVAGDY.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/9nEaGz0XNtPQDM85W_BT30leMjA.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/0VExM2xYwz1YaJrllX9AgRR2cXY.jpeg',
           ]}
         />
       </section>
@@ -298,3 +237,42 @@ export default function Home() {
     </main>
   );
 }
+
+[
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/bsjinj6er61Gi8AhyvU9KI7UgCo.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/2xcl5lJcnipI2gUZMtv3r8IoULA.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/qOLwQwGXfHZA8pq2Fp6mZdRcyrg.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/7GoGgCha7mLw5dIyToa17XKm1LY.JPG',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gy3Uf-0Z7KuPtFHR6QqcO1Srlyg.jpg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/oxeT5DLWo_pOpS0lL0KZlUaHzZQ.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/DjaDny2JZhLIuoa6-k8Mt5Af9ng.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/CPzjfHa3iL1SBDSnU3TWx2csotM.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/BzqvC-vHXRVk1vZS_4I6OYnwi-E.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/blk6wPCPC7Sygu2C0sdIGB7FD4Y.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/V3fwqXuhDYyeyurrZ8OpF6j6ebg.jpg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gwWkHxzvdFJ4BXoGuuOsZXfWueE.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gCOr-6VDhSBRnQwmAd0qBRKhaUM.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/UKSINyu3UWRjawDBwKQkECBkRZY.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/ffCK-t-JGSeatpdY2L8MDzjsJzk.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/Xj6R_nRDTqe71_NFRH2K0U-b_dE.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/FesKqvkbdlfulwwj37JoZJQp-Rg.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gf8lpnunOb0xf-0Sz2fAVmC9hGs.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/lJ8td5kywwANbwtTXj0_zq_AJ-M.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/VbWn2SRy2PQQrTgftzMAMP-Cwd8.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/NKh-6xR3iE293SCyEzaNhp9DHpI.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/8MVO5kXGjNCFrCYsSujHHLEaQKY.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/xgeio_Ltr7-bGzpbMuO1Wfplz1o.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/sItEmSPyBKqVe5gMKQWhOZ0K2n4.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/ZDbJZw_i3aoq1HE1kHWz8aI3ihU.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/6lW7BNmwEL07ag60YmpgCj_8NXc.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/v4NK9IKMz2A6ZtWpPwIn5smY3Z8.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/6opwqHGH4MlWcbDNdgJLohQDCxE.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/2lj6Nl17e9MrnWLbjbeGm39RBKw.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/GaZS1lCWbuSo4spa-ZxNu0-X_TM.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/8TJZ_OlCsXE9F-pbqH7fYxVAGDY.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/9nEaGz0XNtPQDM85W_BT30leMjA.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/0VExM2xYwz1YaJrllX9AgRR2cXY.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/o6wwaaNlcBXNIuS2eaJojLOwEi4.jpeg',
+  'https://t1.daumcdn.net/brunch/service/user/d4v5/image/_3Sv7kwk5kNGbOd1Z_xz975esNk.gif',
+  'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/d4v5/image/ZW3pLUS0Yu60Q81nwUiTdo7RWNc.jpeg',
+];

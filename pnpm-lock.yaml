@@ -17,7 +17,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   react-hot-toast: ^2.4.1
-  swiper: ^10.1.0
+  react-remove-scroll: ^2.5.6
   tailwind-merge: ^1.14.0
   tailwindcss: ^3.3.3
   tailwindcss-animate: ^1.0.6
@@ -39,7 +39,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hot-toast: 2.4.1_biqbaboplfbrettd7655fr4n2y
-  swiper: 10.1.0
+  react-remove-scroll: 2.5.6_j3ahe22lw6ac2w6qvqp4kjqnqy
   tailwind-merge: 1.14.0
   tailwindcss-animate: 1.0.6_tailwindcss@3.3.3
   typescript: 5.1.6
@@ -3032,6 +3032,25 @@ packages:
       use-sidecar: 1.1.2_j3ahe22lw6ac2w6qvqp4kjqnqy
     dev: false
 
+  /react-remove-scroll/2.5.6_j3ahe22lw6ac2w6qvqp4kjqnqy:
+    resolution: {integrity: sha512-bO856ad1uDYLefgArk559IzUNeQ6SWH4QnrevIUjH+GczV56giDfl3h0Idptf2oIKxQmd1p9BN25jleKodTALg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@types/react': 18.2.20
+      react: 18.2.0
+      react-remove-scroll-bar: 2.3.4_j3ahe22lw6ac2w6qvqp4kjqnqy
+      react-style-singleton: 2.2.1_j3ahe22lw6ac2w6qvqp4kjqnqy
+      tslib: 2.6.1
+      use-callback-ref: 1.3.0_j3ahe22lw6ac2w6qvqp4kjqnqy
+      use-sidecar: 1.1.2_j3ahe22lw6ac2w6qvqp4kjqnqy
+    dev: false
+
   /react-style-singleton/2.2.1_j3ahe22lw6ac2w6qvqp4kjqnqy:
     resolution: {integrity: sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g==}
     engines: {node: '>=10'}
@@ -3306,11 +3325,6 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
-
-  /swiper/10.1.0:
-    resolution: {integrity: sha512-E+wh+hcSbwlRfXuwBTclcOOikOjNdSF0a2Sdg3J4cIWtHO64A7SaLRfezfrJ67CW3GEc15AduYU2YKlElsjqsQ==}
-    engines: {node: '>= 4.7.0'}
-    dev: false
 
   /tailwind-merge/1.14.0:
     resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
