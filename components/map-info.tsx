@@ -17,7 +17,7 @@ export default function MapInfo() {
       <p>
         {place}
         <br />
-        라비돌웨딩강남 2F 오뗄홀
+        <b>라비돌웨딩강남</b> 2F 오뗄홀
       </p>
       <p className='mt-2 text-xs text-gy-8'>02-538-3300</p>
       <div className='absolute top-0 right-0'>
