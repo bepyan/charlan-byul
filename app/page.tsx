@@ -2,8 +2,9 @@ import BankAccordion from '~/components/bank-accordion';
 import CommentFormDialog from '~/components/comment-form-dialog';
 import CommentList from '~/components/comment-list';
 import ContactDialog from '~/components/contact-dialog';
-import { DividerIcon, LinkIcon, PearlIcon } from '~/components/icons';
+import { DividerIcon, PearlIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
+import MapInfo from '~/components/map-info';
 import NaverMap from '~/components/naver-map';
 import VideoPlayer from '~/components/video-player';
 
@@ -161,14 +162,7 @@ export default function Home() {
         <h2 className='text-center'>오시는 길</h2>
         <NaverMap className='my-10 h-60 w-full' />
         <div className='mx-8 mt-4'>
-          <div className='relative'>
-            <p className=''>
-              서울 강남구 논현로79길 72
-              <br />
-              라비돌웨딩강남 2F 오뗄홀
-            </p>
-          </div>
-          <p className='mt-2 text-xs text-gy-8'>02-538-3300</p>
+          <MapInfo />
         </div>
         <div className='mt-10 mx-8 space-y-3'>
           <div className='flex'>
