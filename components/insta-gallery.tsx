@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
 import { DownIcon } from './icons';
@@ -14,6 +14,25 @@ export default function InstaGallery({ images }: { images: string[] }) {
   const [sliceIndex, setSliceIndex] = useState(1);
 
   const openImage = useInstaGalleryStore((state) => state.openImage);
+
+  useEffect(() => {
+    const loadImage = (url: string) => {
+      return new Promise((resolve, reject) => {
+        const loadImg = new Image();
+        loadImg.src = url;
+        loadImg.onload = () => resolve(url);
+        loadImg.onerror = (err) => reject(err);
+      });
+    };
+
+    Promise.all(images.map(loadImage))
+      .then(() => console.log('finish load images'))
+      .catch((err) => console.log('fail load images', err));
+  }, [images]);
+
+  const onClickMore = () => {
+    setSliceIndex(sliceIndex + 1);
+  };
 
   return (
     <>
@@ -31,8 +50,9 @@ export default function InstaGallery({ images }: { images: string[] }) {
       <div className='mt-8 flex items-center justify-center'>
         {images.length > sliceIndex * SLICE_SIZE && (
           <button
+            id='more-btn'
             className='px-4 py-2 border rounded-full flex items-center gap-1 text-xs transition-colors active:bg-gray-50'
-            onClick={() => setSliceIndex(sliceIndex + 1)}
+            onClick={onClickMore}
           >
             <DownIcon className='text-gy-6' />
             사진 더보기
