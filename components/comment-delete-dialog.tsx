@@ -36,14 +36,24 @@ export default function CommentDeleteDialog({ targetComment }: { targetComment: 
       <DialogTrigger className='ml-1'>
         <CloseLineIcon className='w-3 h-3' />
       </DialogTrigger>
-      <DialogContent className='w-11/12 rounded-lg border'>
+      <DialogContent className='w-10/12 rounded-lg border'>
         <DialogTitle className='p-4'>메시지 제거</DialogTitle>
         {targetComment && (
           <form onSubmit={onSubmitDeleteComment} className='px-4 pb-4'>
             <Input disabled={loading} name='password' type='password' placeholder='비밀번호' />
-            <Button disabled={loading} type='submit' className='mt-3 w-full'>
-              확인
-            </Button>
+            <div className='mt-3 flex gap-2'>
+              <button
+                disabled={loading}
+                type='button'
+                onClick={() => setOpen(false)}
+                className='flex-1'
+              >
+                취소
+              </button>
+              <Button disabled={loading} type='submit' className='flex-[2]'>
+                확인
+              </Button>
+            </div>
           </form>
         )}
       </DialogContent>

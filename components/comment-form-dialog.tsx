@@ -72,8 +72,16 @@ export default function CommentFormDialog() {
               className='mt-3 resize-none'
               placeholder='메시지를 작성 해주세요.'
             />
-            <div className='mt-3'>
-              <Button disabled={loading} type='submit' className='w-full'>
+            <div className='mt-3 flex items-center gap-2'>
+              <button
+                disabled={loading}
+                type='button'
+                onClick={() => setOpen(false)}
+                className='flex-1'
+              >
+                취소
+              </button>
+              <Button disabled={loading} type='submit' className='flex-[2]'>
                 보내기
               </Button>
             </div>
