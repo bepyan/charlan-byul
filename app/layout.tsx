@@ -27,9 +27,6 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
-  icons: {
-    icon: '/favicon.png',
-  },
   robots: {
     index: false,
     follow: false,
