@@ -1,10 +1,10 @@
 import './global.css';
 
 import type { Metadata } from 'next';
-import Head from 'next/head';
 import Script from 'next/script';
 
 import HotToaster from '~/components/hot-toaster';
+import { PreloadResources } from './preload';
 
 const config = {
   title: '김경찬 ♥ 김샛별 결혼합니다',
@@ -38,26 +38,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='ko'>
-      <Head>
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />
-        <link
-          rel='preload'
-          href='https://fonts.googleapis.com/css2?family=Castoro&family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@200;400;500;700&display=optional'
-        />
-        <link
-          rel='preload'
-          href='https://velog.velcdn.com/images/bepyan/post/4b5eac52-8d8f-465f-8087-564517fa4f35/image.mp4'
-        />
-        <link
-          rel='preload'
-          href='https://t1.daumcdn.net/brunch/service/user/d4v5/image/ZW3pLUS0Yu60Q81nwUiTdo7RWNc.jpeg'
-        />
-        <link
-          rel='preload'
-          href='https://github.com/bepyan/charlan-byul/assets/65283190/2a6bfd15-e502-4d61-b94d-eec5758061a4'
-        />
-      </Head>
+      <PreloadResources />
       <body className='font-serif'>
         {children}
         <HotToaster />
