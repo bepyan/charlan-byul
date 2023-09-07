@@ -25,13 +25,13 @@ export default function InstaGalleryDialog({ images }: { images: string[] }) {
       <div
         className={cn(
           !open && 'hidden',
-          'animate-in fade-in-0',
+          'container',
           'z-50 w-full h-full fixed inset-0 overflow-hidden bg-white/90 backdrop-blur',
         )}
       >
         {/* 슬라이더 */}
         <div
-          className='flex items-end flex-shrink-0 select-none'
+          className='flex items-center flex-shrink-0 select-none'
           style={{ transform: `translateX(-${window.innerWidth * sliderIndex}px)` }}
         >
           {images.map((image, i) => (

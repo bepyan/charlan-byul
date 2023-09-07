@@ -21,6 +21,7 @@ export default function VideoPlayer() {
           muted={muted}
           playsInline
           webkit-playsinline='webkit-playsinline'
+          poster='https://t1.daumcdn.net/brunch/service/user/d4v5/image/qu9IRzx1uS0s1LEHJrfpndwToP4.jpeg'
         >
           <source
             src='https://velog.velcdn.com/images/bepyan/post/4b5eac52-8d8f-465f-8087-564517fa4f35/image.mp4'
@@ -35,7 +36,7 @@ export default function VideoPlayer() {
           onClick={onClick}
         >
           <VolumeOffIcon />
-          음속어 해제
+          음소거 해제
         </button>
       )}
     </div>

@@ -68,7 +68,7 @@ export default function Home() {
           <br />
           오셔서 축복해 주시면 감사하겠습니다.
         </p>
-        <div className='mt-10 flex items-center justify-center gap-3'>
+        <div className='mt-6 flex items-center justify-center gap-3'>
           <div>
             <div>김인환</div>
             <div>김옥현</div>
@@ -77,7 +77,7 @@ export default function Home() {
           <span>차남</span>
           <strong>경찬</strong>
         </div>
-        <div className='mt-10 flex items-center justify-center gap-3'>
+        <div className='mt-6 flex items-center justify-center gap-3'>
           <div>
             <div>김경복</div>
             <div>김유정</div>
@@ -112,8 +112,8 @@ export default function Home() {
         </div>
       </section>
       {/* 갤러리 */}
-      <section className='mt-1'>
-        <div className='my-10 select-none pointer-events-none'>
+      <section>
+        <div className='my-4 select-none pointer-events-none'>
           <img
             src='https://t1.daumcdn.net/brunch/service/user/d4v5/image/_3Sv7kwk5kNGbOd1Z_xz975esNk.gif'
             alt='갤러리'
@@ -129,8 +129,8 @@ export default function Home() {
             'https://t1.daumcdn.net/brunch/service/user/d4v5/image/oxeT5DLWo_pOpS0lL0KZlUaHzZQ.jpeg',
             'https://t1.daumcdn.net/brunch/service/user/d4v5/image/DjaDny2JZhLIuoa6-k8Mt5Af9ng.jpeg',
             'https://t1.daumcdn.net/brunch/service/user/d4v5/image/CPzjfHa3iL1SBDSnU3TWx2csotM.jpeg',
-            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/BzqvC-vHXRVk1vZS_4I6OYnwi-E.jpeg',
             'https://t1.daumcdn.net/brunch/service/user/d4v5/image/blk6wPCPC7Sygu2C0sdIGB7FD4Y.jpeg',
+            'https://t1.daumcdn.net/brunch/service/user/d4v5/image/BzqvC-vHXRVk1vZS_4I6OYnwi-E.jpeg',
             'https://t1.daumcdn.net/brunch/service/user/d4v5/image/V3fwqXuhDYyeyurrZ8OpF6j6ebg.jpg',
             'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gwWkHxzvdFJ4BXoGuuOsZXfWueE.jpeg',
             'https://t1.daumcdn.net/brunch/service/user/d4v5/image/gCOr-6VDhSBRnQwmAd0qBRKhaUM.jpeg',
