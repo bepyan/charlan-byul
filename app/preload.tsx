@@ -5,12 +5,12 @@
 import ReactDOM from 'react-dom';
 
 export function PreloadResources() {
-  ReactDOM.preconnect('https://fonts.googleapis.com');
-  ReactDOM.preconnect('https://fonts.gstatic.com', { crossOrigin: '' });
-  ReactDOM.preload(
-    'https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@200;400;500;700&display=optional',
-    { as: 'style' },
-  );
+  // ReactDOM.preconnect('https://fonts.googleapis.com');
+  // ReactDOM.preconnect('https://fonts.gstatic.com', { crossOrigin: '' });
+  // ReactDOM.preload(
+  //   'https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@200;400;500;700&display=swap',
+  //   { as: 'style' },
+  // );
 
   ReactDOM.preload(
     'https://velog.velcdn.com/images/bepyan/post/4b5eac52-8d8f-465f-8087-564517fa4f35/image.mp4',

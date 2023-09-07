@@ -5,6 +5,7 @@ import Script from 'next/script';
 
 import HotToaster from '~/components/hot-toaster';
 import { PreloadResources } from './preload';
+import { fontVariable } from './fonts';
 
 const config = {
   title: '김경찬 ♥ 김샛별 결혼합니다',
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='ko'>
+    <html lang='ko' className={fontVariable}>
       <PreloadResources />
       <body className='font-serif'>
         {children}

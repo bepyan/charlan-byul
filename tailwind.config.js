@@ -3,10 +3,9 @@ module.exports = {
   content: ['./app/**/*.tsx', './components/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     fontFamily: {
-      sans: ['Noto Sans KR', 'sans-serif'],
-      serif: ['Nanum Myeongjo', 'serif'],
-      serif_en: ['Cormorant SC', 'Nanum Myeongjo', 'serif'],
-      mono: ['Source Code Pro', 'monospace'],
+      sans: ['var(--font-sans)', 'Noto Sans KR', 'sans-serif'],
+      serif: ['var(--font-serif)', 'Nanum Myeongjo', 'serif'],
+      serif_en: ['var(--font-serif-en)', 'Cormorant SC', 'Nanum Myeongjo', 'serif'],
     },
     extend: {
       fontSize: {
