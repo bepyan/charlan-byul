@@ -26,6 +26,7 @@ export default function InstaGalleryDialog({ images }: { images: string[] }) {
         className={cn(
           open ? 'flex flex-col' : 'hidden',
           'container z-50 w-full h-full fixed inset-0 overflow-hidden bg-white/90 backdrop-blur',
+          open && 'duration-200 animate-in fade-in-0 zoom-in-95',
         )}
       >
         <div className='flex-1 flex items-center flex-shrink-0 select-none'>
