@@ -23,7 +23,6 @@ export default function InstaGalleryDialog({ images }: { images: string[] }) {
 
   useEffect(() => {
     const meta = document.querySelector('meta[name="viewport"]');
-    console.log(meta);
 
     if (open) {
       meta?.setAttribute('content', 'width=device-width, initial-scale=1');
