@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
 import { cn } from '~/libs/utils';
@@ -19,6 +20,17 @@ export default function InstaGalleryDialog({ images }: { images: string[] }) {
 
     setSliderIndex(targetIndex);
   };
+
+  useEffect(() => {
+    const meta = document.querySelector('meta[name="viewport"]');
+    console.log(meta);
+
+    if (open) {
+      meta?.setAttribute('content', 'width=device-width, initial-scale=1');
+    } else {
+      meta?.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
+    }
+  }, [open]);
 
   return createPortal(
     <RemoveScroll enabled={open} removeScrollBar allowPinchZoom>
