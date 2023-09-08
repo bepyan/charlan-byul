@@ -1,3 +1,10 @@
+declare global {
+  interface Window {
+    Kakao: any;
+    naver: any;
+  }
+}
+
 export type Comment = {
   id: string;
   name: string;

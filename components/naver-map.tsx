@@ -5,12 +5,6 @@ import { cn } from '~/libs/utils';
 
 const CLIENT_ID = 'n1j7i4ygpn';
 
-declare global {
-  interface Window {
-    naver: any;
-  }
-}
-
 export default function NaverMap({ className }: { className?: string }) {
   const lot = 37.4960815506362;
   const lat = 127.0327627846199;

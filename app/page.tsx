@@ -2,10 +2,11 @@ import BankAccordion from '~/components/bank-accordion';
 import CommentFormDialog from '~/components/comment-form-dialog';
 import CommentList from '~/components/comment-list';
 import ContactDialog from '~/components/contact-dialog';
-import { DividerIcon, LinkIcon, PearlIcon } from '~/components/icons';
+import { DividerIcon, PearlIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
 import MapInfo from '~/components/map-info';
 import NaverMap from '~/components/naver-map';
+import Share from '~/components/share';
 import VideoPlayer from '~/components/video-player';
 
 export default function Home() {
@@ -222,11 +223,10 @@ export default function Home() {
         <CommentList />
       </section>
       <footer className='relative mt-20 pb-10 px-8'>
-        {/* <div className='flex items-center gap-1 text-xs'>
-          <LinkIcon className='text-gy-8' />
-          청첩장 링크 복사하기
-        </div> */}
-        <p className='mt-8 text-xs text-gy-6'>
+        <div className='flex items-center justify-center'>
+          <Share />
+        </div>
+        <p className='mt-10 text-xs text-gy-6'>
           © 2023{' '}
           <a href='https://bepyan.me/' target='_blank' className='font-bold'>
             bepyan
