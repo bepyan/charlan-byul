@@ -2,7 +2,7 @@ import BankAccordion from '~/components/bank-accordion';
 import CommentFormDialog from '~/components/comment-form-dialog';
 import CommentList from '~/components/comment-list';
 import ContactDialog from '~/components/contact-dialog';
-import { DividerIcon, PearlIcon } from '~/components/icons';
+import { DividerIcon, LinkIcon, PearlIcon } from '~/components/icons';
 import InstaGallery from '~/components/insta-gallery';
 import MapInfo from '~/components/map-info';
 import NaverMap from '~/components/naver-map';
@@ -68,7 +68,7 @@ export default function Home() {
           <br />
           오셔서 축복해 주시면 감사하겠습니다.
         </p>
-        <div className='mt-6 flex items-center justify-center gap-3'>
+        <div className='mt-10 flex items-center justify-center gap-3'>
           <div>
             <div>김인환</div>
             <div>김옥현</div>
@@ -77,7 +77,7 @@ export default function Home() {
           <span>차남</span>
           <strong>경찬</strong>
         </div>
-        <div className='mt-6 flex items-center justify-center gap-3'>
+        <div className='mt-10 flex items-center justify-center gap-3'>
           <div>
             <div>김경복</div>
             <div>김유정</div>
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
       {/* 갤러리 */}
       <section>
-        <div className='my-4 select-none pointer-events-none'>
+        <div className='my-16 select-none pointer-events-none'>
           <img
             src='https://t1.daumcdn.net/brunch/service/user/d4v5/image/_3Sv7kwk5kNGbOd1Z_xz975esNk.gif'
             alt='갤러리'
