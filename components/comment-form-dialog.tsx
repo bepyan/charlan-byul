@@ -4,7 +4,7 @@ import { useCommentStore } from '~/libs/comment-store';
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from './cores/dialog';
 import Input from './cores/input';
 import Textarea from './cores/textarea';
-import { SendIcon } from './icons';
+import { SendIcon } from './cores/icons';
 import { useState } from 'react';
 import { CommentPost } from '~/libs/types';
 import Button from './cores/button';

@@ -1,7 +1,7 @@
 'use client';
 
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from './cores/dialog';
-import { ChatIcon, PhoneIcon } from './icons';
+import { ChatIcon, PhoneIcon } from './cores/icons';
 
 type Contact = {
   name: string;

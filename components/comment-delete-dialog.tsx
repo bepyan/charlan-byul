@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from './cores/dialog';
-import { CloseLineIcon } from './icons';
+import { CloseLineIcon } from './cores/icons';
 import Input from './cores/input';
 import Button from './cores/button';
 import { useCommentStore } from '~/libs/comment-store';

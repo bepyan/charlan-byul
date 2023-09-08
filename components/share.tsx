@@ -1,7 +1,7 @@
 'use client';
 import { copy } from '~/libs/copy';
-import { LinkIcon, ShareIcon } from './icons';
-import { Popover, PopoverArrow, PopoverContent, PopoverTrigger } from './popover';
+import { LinkIcon, ShareIcon } from './cores/icons';
+import { Popover, PopoverArrow, PopoverContent, PopoverTrigger } from './cores/popover';
 import KakaoShare from './share-kakao';
 import { useState } from 'react';
 

@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
-import { DownIcon } from './icons';
+import { DownIcon } from './cores/icons';
 import { useInstaGalleryStore } from '~/libs/insta-gallery-store';
 import Intersect from './cores/intersect';
 import { cn } from '~/libs/utils';

@@ -1,6 +1,9 @@
-import CopyButton from './copy-button';
+'use client';
+
+import { cn } from '~/libs/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './cores/accordion';
-import { DividerIcon } from './icons';
+import { CopyLineIcon, DividerIcon } from './cores/icons';
+import { copy } from '~/libs/copy';
 
 export default function BankAccordion({
   title,
@@ -25,7 +28,15 @@ export default function BankAccordion({
                 <DividerIcon className='text-gy-8 mx-1' />
                 <div>{number}</div>
               </div>
-              <CopyButton className='absolute top-0.5 right-0' text={`${bank} ${number}`} />
+              <button
+                className={cn(
+                  'absolute top-0.5 right-0',
+                  'text-gy-6 transition-colors active:text-gy-8',
+                )}
+                onClick={() => copy(`${bank} ${number}`)}
+              >
+                <CopyLineIcon />
+              </button>
             </div>
           ))}
         </AccordionContent>

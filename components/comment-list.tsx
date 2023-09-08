@@ -1,7 +1,7 @@
 'use client';
 
 import { format } from 'date-fns';
-import { DownIcon, LoadingLoopIcon } from './icons';
+import { DownIcon, LoadingLoopIcon } from './cores/icons';
 import { useEffect, useState } from 'react';
 import { useCommentStore } from '~/libs/comment-store';
 import CommentDeleteDialog from './comment-delete-dialog';

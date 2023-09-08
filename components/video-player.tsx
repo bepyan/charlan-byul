@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { VolumeOffIcon } from './icons';
+import { VolumeOffIcon } from './cores/icons';
 
 export default function VideoPlayer() {
   const [muted, setMuted] = useState(true);

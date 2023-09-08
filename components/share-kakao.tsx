@@ -1,7 +1,7 @@
 'use client';
 
 import Script from 'next/script';
-import { KakaoIcon } from './icons';
+import { KakaoIcon } from './cores/icons';
 import { cn } from '~/libs/utils';
 
 const URL =

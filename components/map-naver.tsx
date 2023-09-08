@@ -2,7 +2,7 @@
 
 import Script from 'next/script';
 import { cn } from '~/libs/utils';
-import { DestinationIcon } from './icons';
+import { DestinationIcon } from './cores/icons';
 import { useRef } from 'react';
 
 const CLIENT_ID = 'n1j7i4ygpn';

@@ -3,10 +3,10 @@ import CommentFormDialog from '~/components/comment-form-dialog';
 import CommentList from '~/components/comment-list';
 import ContactDialog from '~/components/contact-dialog';
 import Intersect from '~/components/cores/intersect';
-import { DividerIcon, PearlIcon } from '~/components/icons';
+import { DividerIcon, PearlIcon } from '~/components/cores/icons';
 import InstaGallery from '~/components/insta-gallery';
 import MapInfo from '~/components/map-info';
-import NaverMap from '~/components/naver-map';
+import NaverMap from '~/components/map-naver';
 import Share from '~/components/share';
 import VideoPlayer from '~/components/video-player';
 
@@ -39,7 +39,7 @@ export default function Home() {
         </Intersect>
         <div className='mt-10'>
           <img
-            className='w-full h-full aspect-4/3'
+            className='w-full h-full aspect-4/3 pointer-events-none'
             src='https://t1.daumcdn.net/brunch/service/user/d4v5/image/ZW3pLUS0Yu60Q81nwUiTdo7RWNc.jpeg'
             alt=''
           />

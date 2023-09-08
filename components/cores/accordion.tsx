@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
-import { ArrowDownIcon } from '../icons';
+import { ArrowDownIcon } from './icons';
 import { cn } from '~/libs/utils';
 
 const Accordion = AccordionPrimitive.Root;

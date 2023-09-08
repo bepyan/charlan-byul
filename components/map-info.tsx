@@ -6,8 +6,8 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from './dropdown-menu';
-import { ArrowTopRightIcon, MapPointIcon } from './icons';
+} from './cores/dropdown-menu';
+import { ArrowTopRightIcon, MapPointIcon } from './cores/icons';
 
 export default function MapInfo() {
   const place = '서울 강남구 논현로79길 72';
