@@ -161,8 +161,8 @@ export default function Home() {
       {/* 오시는 길 */}
       <section className='my-20'>
         <h2 className='text-center'>오시는 길</h2>
-        <NaverMap className='my-10 h-60 w-full' />
-        <div className='mx-8 mt-4'>
+        <NaverMap className='mt-5 mb-10 h-60 w-full' />
+        <div className='ml-8 mr-6 mt-4'>
           <MapInfo />
         </div>
         <div className='mt-10 mx-8 space-y-3'>

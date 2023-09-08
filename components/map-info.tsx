@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from './dropdown-menu';
-import { MapPointIcon } from './icons';
+import { ArrowTopRightIcon, MapPointIcon } from './icons';
 
 export default function MapInfo() {
   const place = '서울 강남구 논현로79길 72';
@@ -25,13 +25,21 @@ export default function MapInfo() {
           <DropdownMenuTrigger className='p-2 rounded-full transition-opacity active:opacity-60'>
             <MapPointIcon className='h-6 w-6 text-gy-6' />
           </DropdownMenuTrigger>
-          <DropdownMenuContent align='end' className='text-xs'>
+          <DropdownMenuContent align='end' className='text-xs p-1.5'>
             <DropdownMenuItem onSelect={() => copy(place)}>주소 복사하기</DropdownMenuItem>
-            <DropdownMenuItem onSelect={() => window.open('https://naver.me/55R8LihG', '_blank')}>
-              네이버 맵
+            <DropdownMenuItem
+              onSelect={() => window.open('https://naver.me/55R8LihG', '_blank')}
+              className='flex justify-between'
+            >
+              네이버 지도
+              <ArrowTopRightIcon />
             </DropdownMenuItem>
-            <DropdownMenuItem onSelect={() => window.open('https://kko.to/bE8LIZYsA8', '_blank')}>
-              카카오 맵
+            <DropdownMenuItem
+              onSelect={() => window.open('https://kko.to/bE8LIZYsA8', '_blank')}
+              className='flex justify-between'
+            >
+              카카오맵
+              <ArrowTopRightIcon />
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
