@@ -36,15 +36,18 @@ export default function InstaGalleryDialog({ images }: { images: string[] }) {
     <RemoveScroll enabled={open} removeScrollBar allowPinchZoom>
       <div
         className={cn(
-          open ? 'flex flex-col' : 'hidden',
-          'container z-50 w-full h-full fixed inset-0 overflow-hidden bg-white/90 backdrop-blur',
-          open && 'duration-200 animate-in fade-in-0 zoom-in-95',
+          !open ? 'hidden' : 'animate-in fade-in-0',
+          'container z-40 w-full h-full fixed inset-0 bg-white/90 backdrop-blur',
+        )}
+      />
+      <div
+        className={cn(
+          !open ? 'hidden' : 'flex flex-col',
+          'container z-50 w-full h-full fixed inset-0 overflow-hidden',
         )}
       >
-        <div className='flex-1 flex items-center flex-shrink-0 select-none'>
-          <div className='w-full'>
-            <img src={images[sliderIndex]} alt='' className='pointer-events-none' />
-          </div>
+        <div className={cn('flex-1 flex items-center flex-shrink-0 select-none')}>
+          <img src={images[sliderIndex]} alt='' data-animate className='pointer-events-none' />
         </div>
         {/* 인디케이터 */}
         <div className='mt-auto pt-2 pb-12'>
