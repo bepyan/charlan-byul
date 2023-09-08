@@ -5,6 +5,8 @@ import dynamic from 'next/dynamic';
 
 import { DownIcon } from './icons';
 import { useInstaGalleryStore } from '~/libs/insta-gallery-store';
+import Intersect from './cores/intersect';
+import { cn } from '~/libs/utils';
 
 const InstalGalleryDialog = dynamic(() => import('./insta-gallery-dialog'), { ssr: false });
 
@@ -34,11 +36,18 @@ export default function InstaGallery({ images }: { images: string[] }) {
     setSliceIndex(sliceIndex + 1);
   };
 
+  Math.floor(images.length / SLICE_SIZE);
+
   return (
     <>
-      <div className='grid grid-cols-3 gap-1 select-none'>
+      <Intersect className='grid grid-cols-3 gap-1 select-none'>
         {images.slice(0, sliceIndex * SLICE_SIZE).map((image, i) => (
-          <button key={i} onClick={() => openImage(i)}>
+          <button
+            key={i}
+            data-animate-stage={(i % SLICE_SIZE) + 1}
+            style={{ '--delay': '30ms' } as React.CSSProperties}
+            onClick={() => openImage(i)}
+          >
             <img
               className='w-full h-full object-cover aspect-square pointer-events-none'
               src={`https://img1.daumcdn.net/thumb/R400x0.fjpg/?fname=${image}`}
@@ -46,7 +55,7 @@ export default function InstaGallery({ images }: { images: string[] }) {
             />
           </button>
         ))}
-      </div>
+      </Intersect>
       <div className='mt-8 flex items-center justify-center'>
         {images.length > sliceIndex * SLICE_SIZE && (
           <button

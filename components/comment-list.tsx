@@ -5,6 +5,7 @@ import { DownIcon, LoadingLoopIcon } from './icons';
 import { useEffect, useState } from 'react';
 import { useCommentStore } from '~/libs/comment-store';
 import CommentDeleteDialog from './comment-delete-dialog';
+import Intersect from './cores/intersect';
 
 const SLICE_SIZE = 6;
 
@@ -30,9 +31,13 @@ export default function CommentList() {
         </div>
       )}
       {!loadingList && (
-        <div className='pl-8 pr-6 text-sm'>
-          {commentList.slice(0, sliceIndex * SLICE_SIZE).map((comment) => (
-            <div key={comment.id} className='py-4 border-b'>
+        <Intersect className='pl-8 pr-6 text-sm'>
+          {commentList.slice(0, sliceIndex * SLICE_SIZE).map((comment, i) => (
+            <div
+              key={comment.id}
+              data-animate-stage={(i % SLICE_SIZE) + 1}
+              className='py-4 border-b'
+            >
               <div className='text-sm text-gy-6 flex'>
                 <span>{comment.name}</span>
                 <span className='ml-auto font-light text-[12px]'>
@@ -53,7 +58,7 @@ export default function CommentList() {
               </button>
             )}
           </div>
-        </div>
+        </Intersect>
       )}
     </div>
   );
