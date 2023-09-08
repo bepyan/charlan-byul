@@ -20,16 +20,16 @@ export default function Share() {
           <ShareIcon className='h-6 w-6' />
         </PopoverTrigger>
         <PopoverContent sideOffset={5} className='p-2'>
-          <div
-            className='flex items-center gap-2 text-xs p-2 rounded-lg transition-colors active:bg-gray-100'
+          <button
+            className='w-full flex items-center gap-2 text-xs p-2 rounded-lg transition-colors active:bg-gray-100 focus:outline-none'
             onClick={onCopy}
           >
             <div className='h-4 w-4 flex items-center justify-center'>
               <LinkIcon className='text-gy-8' />
             </div>
             링크 복사하기
-          </div>
-          <KakaoShare className='p-2 rounded-lg transition-colors active:bg-gray-100' />
+          </button>
+          <KakaoShare className='p-2 rounded-lg transition-colors active:bg-gray-100 focus:outline-none' />
           <PopoverArrow className='fill-white' />
         </PopoverContent>
       </Popover>

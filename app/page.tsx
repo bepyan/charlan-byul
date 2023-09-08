@@ -230,12 +230,14 @@ export default function Home() {
           </div>
         </Intersect>
       </section>
-      <section>
-        <h2 className='text-center'>축하 메시지</h2>
-        <div className='flex justify-center my-6'>
-          <CommentFormDialog />
-        </div>
-        <CommentList />
+      <section className='my-10'>
+        <Intersect>
+          <h2 className='text-center'>축하 메시지</h2>
+          <div className='flex justify-center my-6'>
+            <CommentFormDialog />
+          </div>
+          <CommentList />
+        </Intersect>
       </section>
       <footer className='relative mt-20 pb-10 px-8'>
         <div className='flex items-center justify-center'>

@@ -20,7 +20,7 @@ html {
 
 /* stage-animation */
 
-@keyframes enter {
+@keyframes stage-enter {
   0% {
     opacity: 0;
     transform: translateY(5px);
@@ -42,7 +42,7 @@ html {
     --stagger: 0;
     --delay: 30ms;
     --start: 0ms;
-    animation: enter 0.6s both;
+    animation: stage-enter 0.6s both;
     animation-delay: calc(var(--stagger) * var(--delay) + var(--start));
   }
 
