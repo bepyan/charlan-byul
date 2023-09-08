@@ -223,19 +223,15 @@ export function KakaoIcon(props: SVGProps<SVGSVGElement>) {
 
 export function ShareIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='1em'
-      height='1em'
-      viewBox='0 0 256 256'
-      {...props}
-    >
-      <g fill='currentColor'>
+    <svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' {...props}>
+      <g fill='none' stroke='currentColor' strokeWidth='1.5'>
+        <path d='M9 11.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z'></path>
         <path
-          d='M208 200a32 32 0 1 1-32-32a32 32 0 0 1 32 32ZM176 88a32 32 0 1 0-32-32a32 32 0 0 0 32 32Z'
-          opacity='.2'
+          strokeLinecap='round'
+          d='M14.32 16.802L9 13.29m5.42-6.45L9.1 10.35'
+          opacity='.5'
         ></path>
-        <path d='M176 160a39.89 39.89 0 0 0-28.62 12.09l-46.1-29.63a39.8 39.8 0 0 0 0-28.92l46.1-29.63a40 40 0 1 0-8.66-13.45l-46.1 29.63a40 40 0 1 0 0 55.82l46.1 29.63A40 40 0 1 0 176 160Zm0-128a24 24 0 1 1-24 24a24 24 0 0 1 24-24ZM64 152a24 24 0 1 1 24-24a24 24 0 0 1-24 24Zm112 72a24 24 0 1 1 24-24a24 24 0 0 1-24 24Z'></path>
+        <path d='M19 18.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Zm0-13a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z'></path>
       </g>
     </svg>
   );
