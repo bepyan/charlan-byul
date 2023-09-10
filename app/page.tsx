@@ -175,16 +175,21 @@ export default function Home() {
           <div className='ml-8 mr-6 mt-4'>
             <MapInfo />
           </div>
-          <div className='mt-10 mx-8 space-y-3'>
+          <div className='mt-10 mx-8 space-y-4'>
             <div className='flex'>
               <span className='flex-shrink-0 w-14'>지하철</span>
               <DividerIcon className='flex-shrink-0 text-gy-8 mt-[2.5px] mr-2' />
-              <span className='text-xs text-gy-6 mt-[1px]'>[2호선 강남역] 1번 출구 도보 10분</span>
+              <div className='text-xs text-gy-6 mt-[1px] space-y-0.5'>
+                <p>[2호선 강남역] 1번 출구 도보 10분</p>
+                <div className='flex gap-0.5'>
+                  *<span>셔틀버스 강남역 1번 출구 수시 운행</span>
+                </div>
+              </div>
             </div>
             <div className='flex'>
               <span className='flex-shrink-0 w-14'>버스</span>
               <DividerIcon className='flex-shrink-0 text-gy-8 mt-[2.5px] mr-2' />
-              <div className='text-xs text-gy-6 mt-[1px] space-y-2'>
+              <div className='text-xs text-gy-6 mt-[1px] space-y-1.5'>
                 <p>
                   간선: 140, 146, 341, 360, 400, 402, 420, 440, 441, 452, 470, 541, 542, 740, 741
                 </p>
@@ -194,18 +199,25 @@ export default function Home() {
             <div className='flex'>
               <span className='flex-shrink-0 w-14'>주차</span>
               <DividerIcon className='flex-shrink-0 text-gy-8 mt-[2.5px] mr-2' />
-              <div className='text-xs text-gy-6 mt-[1px] space-y-2'>
+              <div className='text-xs text-gy-6 mt-[1px] space-y-1.5'>
                 <p>
                   건물 내 주차장 600대 가능
                   <br />
                   (무료주차 1시간 30분)
                 </p>
-                <p>
-                  *주차장 이용이 혼잡하오니 불편하시더라도 대중교통 이용을 권장 드립니다.
-                  <br />
-                  (만차 시 제2주차장으로 안내해 드릴 수 있으니 여유롭게 도착하셔서 안내 받으시기를
-                  바랍니다.)
-                </p>
+                <div className='flex gap-0.5'>
+                  *
+                  <span>
+                    주차장 이용이 혼잡하오니 불편하시더라도 대중교통 이용을 권장 드립니다.
+                  </span>
+                </div>
+                <div className='flex gap-0.5'>
+                  *
+                  <span>
+                    만차 시 제2주차장으로 안내해 드릴 수 있으니 여유롭게 도착하셔서 안내 받으시기를
+                    바랍니다.
+                  </span>
+                </div>
               </div>
             </div>
           </div>
