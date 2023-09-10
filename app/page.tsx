@@ -75,7 +75,7 @@ export default function Home() {
           </p>
         </Intersect>
         <Intersect>
-          <div className='mt-10 flex items-center justify-center gap-3'>
+          <div className='mt-14 flex items-center justify-center gap-3'>
             <div>
               <div>김인환</div>
               <div>김옥현</div>
@@ -84,7 +84,7 @@ export default function Home() {
             <span>차남</span>
             <strong>경찬</strong>
           </div>
-          <div className='mt-10 flex items-center justify-center gap-3'>
+          <div className='mt-5 flex items-center justify-center gap-3'>
             <div>
               <div>김경복</div>
               <div>김유정</div>
@@ -93,7 +93,7 @@ export default function Home() {
             <span>장녀</span>
             <strong>샛별</strong>
           </div>
-          <div className='mt-10 text-center'>
+          <div className='mt-14 text-center'>
             <ContactDialog
               groomList={[
                 { designation: '신랑', name: '김경찬', phone: '010-5483-4475' },
@@ -195,10 +195,16 @@ export default function Home() {
               <span className='flex-shrink-0 w-14'>주차</span>
               <DividerIcon className='flex-shrink-0 text-gy-8 mt-[2.5px] mr-2' />
               <div className='text-xs text-gy-6 mt-[1px] space-y-2'>
-                <p>건물 내 주차장 600대 가능 (무료주차 1시간 30분)</p>
                 <p>
-                  *주차장 이용이 혼잡하오니 불편하시더라도 대중교통 이용을 권장 드립니다. (만차 시
-                  제2주차장으로 안내해 드릴 수 있으니 여유롭게 도착하셔서 안내 받으시기를 바랍니다.)
+                  건물 내 주차장 600대 가능
+                  <br />
+                  (무료주차 1시간 30분)
+                </p>
+                <p>
+                  *주차장 이용이 혼잡하오니 불편하시더라도 대중교통 이용을 권장 드립니다.
+                  <br />
+                  (만차 시 제2주차장으로 안내해 드릴 수 있으니 여유롭게 도착하셔서 안내 받으시기를
+                  바랍니다.)
                 </p>
               </div>
             </div>
