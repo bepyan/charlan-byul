@@ -16,7 +16,7 @@ export default function Share() {
   return (
     <div>
       <Popover open={open} onOpenChange={setOpen}>
-        <PopoverTrigger className='text-gy-6 transition-colors active:text-gy-8'>
+        <PopoverTrigger className='text-gy-8 transition-colors active:text-gy-9'>
           <ShareIcon className='h-6 w-6' />
         </PopoverTrigger>
         <PopoverContent sideOffset={5} className='p-2'>

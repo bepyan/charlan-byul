@@ -249,7 +249,7 @@ export default function Home() {
         <div className='flex items-center justify-center'>
           <Share />
         </div>
-        <p className='mt-10 text-xs text-gy-6'>
+        <p className='mt-20 text-xs text-gy-6'>
           © 2023{' '}
           <a href='https://bepyan.me/' target='_blank' className='font-bold'>
             bepyan

@@ -12,10 +12,10 @@ export function PreloadResources() {
   //   { as: 'style' },
   // );
 
-  ReactDOM.preload(
-    'https://velog.velcdn.com/images/bepyan/post/4b5eac52-8d8f-465f-8087-564517fa4f35/image.mp4',
-    { as: 'video' },
-  );
+  // ReactDOM.preload(
+  //   'https://velog.velcdn.com/images/bepyan/post/4b5eac52-8d8f-465f-8087-564517fa4f35/image.mp4',
+  //   { as: 'video' },
+  // );
   ReactDOM.preload(
     'https://t1.daumcdn.net/brunch/service/user/d4v5/image/ZW3pLUS0Yu60Q81nwUiTdo7RWNc.jpeg',
     { as: 'image' },

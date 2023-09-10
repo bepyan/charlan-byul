@@ -27,6 +27,8 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
+  manifest: '/manifest.json',
+  themeColor: '#FFFFFF',
   robots: {
     index: false,
     follow: false,
