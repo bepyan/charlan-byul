@@ -21,9 +21,9 @@ export default function KakaoShare({ className }: { className?: string }) {
         title: '김경찬 ♥ 김샛별 결혼합니다',
         description: '11월 4일 낮 12시 30분\n서울, 라비돌웨딩강남',
         imageUrl:
-          'https://t1.daumcdn.net/brunch/service/user/d4v5/image/BzqvC-vHXRVk1vZS_4I6OYnwi-E.jpeg',
-        imageWidth: 390,
-        imageHeight: 520,
+          'https://t1.daumcdn.net/brunch/service/user/d4v5/image/ZW3pLUS0Yu60Q81nwUiTdo7RWNc.jpeg',
+        imageWidth: 600,
+        imageHeight: 450,
         link: {
           mobileWebUrl: URL,
           webUrl: URL,
