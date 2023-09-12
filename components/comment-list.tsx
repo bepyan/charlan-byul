@@ -41,7 +41,7 @@ export default function CommentList() {
               <div className='text-sm text-gy-6 flex'>
                 <span>{comment.name}</span>
                 <span className='ml-auto font-light text-[12px]'>
-                  {format(new Date(comment.createTime), 'yy.MM.dd')}
+                  {/* {format(new Date(comment.createTime), 'yy.MM.dd')} */}
                 </span>
                 <CommentDeleteDialog targetComment={comment} />
               </div>
