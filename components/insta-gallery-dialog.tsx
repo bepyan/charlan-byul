@@ -42,7 +42,7 @@ export default function InstaGalleryDialog({ images }: { images: string[] }) {
       <div
         className={cn(
           !open ? 'hidden' : 'flex flex-col',
-          'container z-50 w-full h-full fixed inset-0 overflow-hidden',
+          'container z-50 w-full h-full fixed inset-0 overflow-y-scroll',
         )}
       >
         <div className={cn('flex-1 flex items-center flex-shrink-0 select-none')}>
