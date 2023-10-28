@@ -36,13 +36,13 @@ export default function InstaGalleryDialog({ images }: { images: string[] }) {
       <div
         className={cn(
           !open ? 'hidden' : 'animate-in fade-in-0',
-          'container z-40 w-full h-full fixed inset-0 bg-white/90 backdrop-blur',
+          'z-40 w-full h-full fixed inset-0 bg-white/90 backdrop-blur',
         )}
       />
       <div
         className={cn(
           !open ? 'hidden' : 'flex flex-col',
-          'container z-50 w-full h-full fixed inset-0 overflow-y-scroll',
+          'container z-50 w-full h-full fixed inset-0 overflow-y-auto',
         )}
       >
         <div className={cn('flex-1 flex items-center flex-shrink-0 select-none')}>
